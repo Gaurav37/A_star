@@ -2,6 +2,7 @@
 A star algorithm for quad-directional movements
 The program has been implemented by using below methods:
 Reconstruct method 
+```
 def reconstruct(child_node,came_from_list):
   child_node=child_node
   path=[]
@@ -11,7 +12,4 @@ def reconstruct(child_node,came_from_list):
       path.append(came_from_list[n][0])
       path.append(came_from_list[n][1])
       child_node=came_from_list[n][1]
-    if child_node==start_node:
-      break
-      path=list(reversed(path))
-      return path
+```
